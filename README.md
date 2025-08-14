@@ -2,7 +2,7 @@
 
 La aplicación se puede ver, desplegada, [aquí](https://cristiandpto23.github.io/buscador-de-libros/)
 
-Realiada con ❤ por [cristiandpto23](https://github.com/cristiandpto23)
+Realizada con ❤ por [cristiandpto23](https://github.com/cristiandpto23)
 
 ## Contexto
 
@@ -57,3 +57,4 @@ Simplemente abre el archivo `index.html` en tu navegador web.
 ## Autor
 
 Cristian Ahumada
+

@@ -1,0 +1,168 @@
+/* estilos para el Buscador de libros por autor */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+}
+
+.search-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+#autorInput {
+    flex: 1;
+    max-width: 400px;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+#autorInput:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+#buscarBtn {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+#buscarBtn:hover {
+    background-color: #2980b9;
+}
+
+#buscarBtn:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+.resultados {
+    min-height: 100px;
+}
+
+.contador {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #e8f4fd;
+    border: 1px solid #3498db;
+    border-radius: 8px;
+}
+
+.contador-info {
+    color: #2c3e50;
+    font-size: 16px;
+}
+
+.cargando {
+    text-align: center;
+    font-style: italic;
+    color: #7f8c8d;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.sin-resultados {
+    text-align: center;
+    color: #e74c3c;
+    font-size: 18px;
+    padding: 20px;
+    background-color: #fdf2f2;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}
+
+.error {
+    text-align: center;
+    color: #e74c3c;
+    font-size: 18px;
+    padding: 20px;
+    background-color: #fdf2f2;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}
+
+.lista-libros {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.libro {
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fafafa;
+    transition: box-shadow 0.3s ease;
+}
+
+.libro:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.libro-info {
+    line-height: 1.6;
+}
+
+.libro-info strong {
+    color: #2c3e50;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .search-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #autorInput {
+        max-width: none;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+}

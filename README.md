@@ -25,7 +25,7 @@ Aplicación web desarrollada en JavaScript que permite buscar libros por autor u
 ## Estructura del Proyecto
 
 ```
-grupo5-mod4-ae5-abpro/
+mod4-ae5-abpro/
 ├── assets/
 │   ├── css/
 │   │   └── styles.css          # Estilos CSS del proyecto
@@ -57,4 +57,5 @@ Simplemente abre el archivo `index.html` en tu navegador web.
 ## Autor
 
 Cristian Ahumada
+
 
